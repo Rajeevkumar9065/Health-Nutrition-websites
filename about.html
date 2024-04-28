@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .about, .team {
+      width: 45%;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Additional styles for improved aesthetics */
+    h1, h2 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+  </header>
+  <section class="content">
+    <div class="about">
+      <h2>Our Story</h2>
+      <p>At Health & Nutrition Co., our journey began with a simple yet powerful belief: that everyone deserves access to the knowledge and resources necessary to lead a healthy and fulfilling life. Founded in 2010 by a team of passionate individuals with diverse backgrounds in nutrition, fitness, and healthcare, we set out on a mission to empower people worldwide to make informed choices about their health and well-being.
+
+        Driven by our commitment to evidence-based practices and continuous innovation, we've grown from a small startup to a leading authority in the health and nutrition industry. Along the way, we've partnered with renowned experts, conducted extensive research, and developed a wide range of products and services to support our community on their wellness journey.</p>
+      <button id="toggleMission">Show Mission</button>
+      <div id="mission" style="display: none;">
+        <h2>Our Mission</h2>
+        <p>Our mission is simple yet profound: to inspire and enable individuals to live their healthiest lives. We strive to achieve this mission by:
+
+            Providing reliable, science-backed information on nutrition, fitness, and overall wellness through our platform.
+            Offering high-quality products and services that promote optimal health and vitality.
+            Cultivating a supportive and inclusive community where individuals can connect, learn, and grow together.
+            Advocating for policies and practices that prioritize public health and well-being on a global scale.
+            Every day, we're driven by the belief that small, positive changes can lead to significant transformations. Whether you're embarking on your wellness journey or seeking to enhance your existing habits, we're here to support you every step of the way.
+            
+            Join us as we continue to empower individuals to thrive and flourish in mind, body, and spirit.</p>
+      </div>
+    </div>
+    <div class="team">
+      <h2>Our Team</h2>
+      <ul>
+        <li>Rajeev- CEO</li>
+        <li>Avik - COO</li>
+        <li>avik-CTO</li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Your Company</p>
+  </footer>
+  <script>
+    // JavaScript code
+    document.getElementById('toggleMission').addEventListener('click', function() {
+      var mission = document.getElementById('mission');
+      if (mission.style.display === 'none') {
+        mission.style.display = 'block';
+      } else {
+        mission.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
